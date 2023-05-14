@@ -4,7 +4,7 @@ import "package:flutter/material.dart";
 import "package:flutter/services.dart";
 
 import "../main.dart";
-import "demo.dart";
+import "auth/login.dart";
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -19,8 +19,8 @@ class _SplashScreenState extends State<SplashScreen> {
     super.initState();
     Future.delayed(const Duration(seconds: 3), () {
       SystemChrome.setSystemUIOverlayStyle(
-        const SystemUiOverlayStyle(
-            statusBarColor: Colors.green,
+        SystemUiOverlayStyle(
+            statusBarColor: Colors.blue.shade400,
             systemNavigationBarColor: Colors.white),
       );
 
@@ -28,7 +28,7 @@ class _SplashScreenState extends State<SplashScreen> {
       SystemChrome.setEnabledSystemUIMode(SystemUiMode.edgeToEdge);
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (_) => const Demo()),
+        MaterialPageRoute(builder: (_) => const Login()),
       );
     });
   }

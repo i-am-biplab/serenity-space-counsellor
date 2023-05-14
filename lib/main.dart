@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: "Serenity Space Counsellor",
       theme: ThemeData(
-        primarySwatch: Colors.green,
+        primarySwatch: Colors.blue,
         inputDecorationTheme: InputDecorationTheme(
           hintStyle: const TextStyle(
             fontSize: 20,
